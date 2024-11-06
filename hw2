@@ -1,0 +1,47 @@
+Задание 1 – Создать объект counter всеми возможными способами:
+a) const counter = {};
+b) const counter = new MyCounter();
+c) const counter = Object.create({});
+d) const counter = Object.assign({}, someObject);
+
+
+Задание 2 – Скопировать объект counter всеми возможными способами:
+a) const x = Object.assign({}, counter);
+b) const x = { ...counter};
+c) let x = JSON.stringify(counter);
+d) counter = JSON.parse(counter);
+e) объект counter может быть скопирован при создании собственной функции копирования
+f) объект counter может быть скопирован при помощи сторонних библиотек 
+
+
+Задание 3 – Создать функцию makeCounter всеми описанными и возможными способами:
+a) function makeCounter() {
+alert("Hi");
+};
+
+b) let makeCounter = function() {
+alert("Hi");
+};
+
+c) const makeCounter = (first, second) => first - second;
+
+Задание 4 - прочитать и описать работу глобальной функции structuredClone():
+
+Глобальная функция structuredClone() позволяет делать глубокие копии объектов. 
+structuredClone() позволяет:
+- клонировать бесконечно вложенные объекты и массивы:
+- клонировать циклические ссылкиж
+- клонировать широкий спектр типов JavaScript, таких как: Date, Set, Map, Error, RegExp, ArrayBuffer, Blob, File, ImageData и многие другие;
+- передавать любые передаваемые объекты.
+
+structuredClone() не может клонировать:
+- функции;
+- узлы DOM;
+- дескрипторы свойств, сеттеры и геттеры;
+- прототипы объектов;
+
+
+
+
+
+
